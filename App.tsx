@@ -1,10 +1,7 @@
 import { StatusBar } from "expo-status-bar";
-import React, { useState } from "react";
-import { StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from "react-native";
 
 export default function App() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
   return (
     <View style={styles.container}>
@@ -16,7 +13,6 @@ export default function App() {
           style={styles.TextInput}
           placeholder="Digite seu e-mail"
           placeholderTextColor="#AFEEEE"
-          onChangeText={(email) => setEmail(email)}
         />
       </View>
 
@@ -26,7 +22,6 @@ export default function App() {
           placeholder="Digite sua senha"
           placeholderTextColor="#AFEEEE"
           secureTextEntry={true}
-          onChangeText={(password) => setPassword(password)}
         />
       </View>
 
